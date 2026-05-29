@@ -49,6 +49,6 @@ npm install
 3. Run using: ionic serve
 
 ## Screenshots
-Screenshots of the application can be found in the Screenshots folder.
+Screenshots of the application can be found in the AppScreenshots folder.
 
 
