@@ -45,3 +45,7 @@ FilmLog is a movie tracking application that allows users to search for movies, 
 ```bash
 npm install
 3. Run using: ionic serve
+
+## Screenshots
+
+Screenshots of the application can be found in the Screenshots folder.
