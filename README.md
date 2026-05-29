@@ -39,6 +39,8 @@ FilmLog is a movie tracking application that allows users to search for movies, 
 3. Run the database migrations.
 4. Start the API.
 
+#### Note: The database is not uploaded directly to GitHub. It is recreated using Entity Framework Core migrations when `Update-Database` is run.
+
 ### Frontend
 1. Open the frontend project in VS Code.
 2. Install dependencies:
@@ -47,5 +49,6 @@ npm install
 3. Run using: ionic serve
 
 ## Screenshots
-
 Screenshots of the application can be found in the Screenshots folder.
+
+
