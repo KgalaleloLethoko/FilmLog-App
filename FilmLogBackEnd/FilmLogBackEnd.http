@@ -1,0 +1,6 @@
+@FilmLogBackEnd_HostAddress = http://localhost:5104
+
+GET {{FilmLogBackEnd_HostAddress}}/swagger/
+Accept: application/json
+
+###
