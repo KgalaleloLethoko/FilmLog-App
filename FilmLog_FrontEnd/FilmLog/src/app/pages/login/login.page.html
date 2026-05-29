@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>FilmLog</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-content">
+  <div class="login-container">
+    <div class="login-card">
+      <h1>FilmLog</h1>
+      <p class="subtitle">Track your movie journey</p>
+
+      <ion-item lines="none" class="custom-item">
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input
+          type="email"
+          placeholder="Enter email"
+          [(ngModel)]="userEmail">
+        </ion-input>
+      </ion-item>
+
+      <ion-item lines="none" class="custom-item">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input
+          type="password"
+          placeholder="Enter password"
+          [(ngModel)]="userPassword">
+        </ion-input>
+      </ion-item>
+
+      <ion-button expand="block" class="login-btn" (click)="login()">
+  Log In
+</ion-button>
+
+<ion-button expand="block" fill="outline" routerLink="/register">
+  Create Account
+</ion-button>
+
+      <p class="message">{{ message }}</p>
+    </div>
+  </div>
+</ion-content>

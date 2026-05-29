@@ -1,0 +1,120 @@
+.watched-content {
+  --background: #111111;
+  color: white;
+}
+
+.page-container {
+  padding: 24px 18px 80px;
+}
+
+h1 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.count-label {
+  color: #ec4899;
+  font-weight: 600;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.movie-card {
+  position: relative;
+  background: #1c1c1c;
+  border-radius: 12px;
+  padding: 8px;
+  position: relative;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  z-index: 10;
+  --color: #ffffff;
+  background: #ec4899;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.page-container {
+  padding-top: 70px;
+}
+
+.poster-box {
+  height: 180px;
+  background: #3a3a3a;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-poster {
+  color: #cccccc;
+}
+
+.movie-card h3 {
+  color: white;
+  font-size: 14px;
+}
+
+.movie-card p {
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.times {
+  color: #ec4899;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+ion-tab-bar {
+  --background: #111111;
+  --color: #8d8d8d;
+  --color-selected: #ec4899;
+}
+
+.watched-content {
+  --padding-bottom: 90px;
+  overflow-y: auto;
+}
+
+.page-container {
+  min-height: 100%;
+  padding-bottom: 100px;
+}
+
+.movie-grid {
+  padding-bottom: 100px;
+}
+
+.reset-btn {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+
+  --background: white;
+  --color: black;
+
+  font-size: 12px;
+  height: 32px;
+  width: auto;
+
+  border-radius: 8px;
+}

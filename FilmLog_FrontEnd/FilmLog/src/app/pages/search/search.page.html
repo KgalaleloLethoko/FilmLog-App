@@ -1,0 +1,34 @@
+<ion-content class="search-content">
+
+  <div class="page-container">
+    <h1>Search Movies</h1>
+
+    <ion-item lines="none" class="search-box">
+      <ion-input
+        placeholder="Search movie"
+        [(ngModel)]="searchTitle">
+      </ion-input>
+    </ion-item>
+
+    <ion-button expand="block" class="search-btn" (click)="searchMovies()">
+      Search
+    </ion-button>
+
+    <p class="message">{{ message }}</p>
+
+    <p class="result-count">{{ movies.length }} results</p>
+
+    <div class="movie-grid">
+      <div class="movie-card" *ngFor="let movie of movies" (click)="openMovieDetails(movie)">
+        <div class="poster-box">
+          <img *ngIf="movie.Poster && movie.Poster !== 'N/A'" [src]="movie.Poster">
+          <div *ngIf="!movie.Poster || movie.Poster === 'N/A'" class="no-poster">No Image</div>
+        </div>
+
+        <h3>{{ movie.Title }}</h3>
+        <p>{{ movie.Year }}</p>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

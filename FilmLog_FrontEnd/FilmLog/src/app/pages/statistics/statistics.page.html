@@ -1,0 +1,28 @@
+<ion-content class="stats-content">
+  <div class="page-container">
+
+    <h1>Statistics</h1>
+    <p class="subtitle">Your movie insights</p>
+
+    <div class="top-section">
+      <div class="chart-card pie-card">
+        <h2>Top 6 Genres</h2>
+        <canvas id="genrePieChart"></canvas>
+      </div>
+
+      <div class="genre-grid">
+        <div class="genre-card" *ngFor="let item of topGenres">
+          <h3>{{ item.genre }}</h3>
+          <p>{{ item.count }}</p>
+          <span>movies</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-card table-card">
+      <h2>Times Watched Per Movie</h2>
+      <canvas id="timesWatchedBarChart"></canvas>
+    </div>
+
+  </div>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-content class="watchlist-content">
+  <div class="page-container">
+    <h1>Watchlist</h1>
+
+    <p class="count-label">
+      In Watchlist: {{ watchlistMovies.length }}
+    </p>
+
+    <p class="message">{{ message }}</p>
+
+    <div class="movie-grid">
+      <div class="movie-card" *ngFor="let movie of watchlistMovies" (click)="openMovieDetails(movie)">
+        <div class="poster-box">
+          <img *ngIf="movie.poster && movie.poster !== 'N/A'" [src]="movie.poster">
+          <div *ngIf="!movie.poster || movie.poster === 'N/A'" class="no-poster">No Image</div>
+        </div>
+
+        <h3>{{ movie.title }}</h3>
+        <p>{{ movie.year }}</p>
+        <p>{{ movie.genre }}</p>
+        <div class="movie-actions">
+
+       <ion-button
+         class="move-btn"
+         (click)="moveToWatched(movie); $event.stopPropagation()">
+          Move to Watched
+       </ion-button>
+
+</div>
+
+           <ion-button fill="clear" class="remove-btn" (click)="removeFromWatchlist(movie.id); $event.stopPropagation()">
+              ✕
+           </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>

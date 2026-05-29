@@ -1,0 +1,43 @@
+<ion-content class="register-content">
+  <div class="register-container">
+    <div class="register-card">
+      <h1>Create Account</h1>
+      <p class="subtitle">Join FilmLog and start tracking your movies</p>
+
+      <ion-item lines="none" class="custom-input">
+        <ion-label position="stacked">Name</ion-label>
+        <ion-input [(ngModel)]="name" placeholder="Enter name"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none" class="custom-input">
+        <ion-label position="stacked">Surname</ion-label>
+        <ion-input [(ngModel)]="surname" placeholder="Enter surname"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none" class="custom-input">
+        <ion-label position="stacked">Age</ion-label>
+        <ion-input type="number" [(ngModel)]="age" placeholder="Enter age"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none" class="custom-input">
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="email" [(ngModel)]="email" placeholder="Enter email"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none" class="custom-input">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input type="password" [(ngModel)]="password" placeholder="Enter password"></ion-input>
+      </ion-item>
+
+      <ion-button expand="block" class="register-btn" (click)="register()">
+        Register
+      </ion-button>
+
+      <ion-button expand="block" fill="clear" class="back-btn" routerLink="/login">
+        Back to Login
+      </ion-button>
+
+      <p class="message">{{ message }}</p>
+    </div>
+  </div>
+</ion-content>

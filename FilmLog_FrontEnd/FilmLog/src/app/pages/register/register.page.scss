@@ -1,0 +1,76 @@
+.register-content {
+  --background: #0b0b0b;
+}
+
+.register-container {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.register-card {
+  width: 100%;
+  max-width: 420px;
+  background: #161616;
+  padding: 28px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.register-card h1 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  color: #b5b5b5;
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+
+.custom-input {
+  --background: #242424;
+  --border-radius: 12px;
+  --padding-start: 14px;
+  --inner-padding-end: 14px;
+  margin-bottom: 14px;
+  color: #ffffff;
+}
+
+ion-label {
+  color: #d6d6d6 !important;
+  font-size: 13px;
+}
+
+ion-input {
+  color: #ffffff;
+}
+
+.register-btn {
+  margin-top: 18px;
+  height: 44px;
+  --border-radius: 12px;
+  --background: #ec4899;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.back-btn {
+  margin-top: 8px;
+  height: 40px;
+  color: #ec4899;
+  text-transform: none;
+}
+
+.message {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 12px;
+  font-size: 14px;
+}

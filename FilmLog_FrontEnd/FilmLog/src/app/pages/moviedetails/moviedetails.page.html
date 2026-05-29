@@ -1,0 +1,35 @@
+<ion-content class="details-content">
+  <div class="details-container">
+    <h1>Movie Details</h1>
+
+    <ion-card class="details-card" *ngIf="movie">
+      <div class="poster-box">
+        <img *ngIf="movie.Poster && movie.Poster !== 'N/A'" [src]="movie.Poster">
+        <div *ngIf="!movie.Poster || movie.Poster === 'N/A'" class="no-poster">No Image</div>
+      </div>
+
+      <ion-card-header>
+        <ion-card-title>{{ movie.Title }}</ion-card-title>
+        <ion-card-subtitle>{{ movie.Year }}</ion-card-subtitle>
+      </ion-card-header>
+
+      <ion-card-content>
+        <p><strong>Genre:</strong> {{ movie.Genre }}</p>
+        <p><strong>Cast:</strong> {{ movie.Actors }}</p>
+        <p><strong>Plot:</strong> {{ movie.Plot }}</p>
+
+        <div class="button-row">
+          <ion-button class="pink-btn" (click)="addToWatchlist()">
+            Add to Watchlist
+          </ion-button>
+
+          <ion-button class="grey-btn" (click)="markAsWatched()">
+            Mark as Watched
+          </ion-button>
+        </div>
+
+        <p class="message">{{ message }}</p>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>

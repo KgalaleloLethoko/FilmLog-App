@@ -1,0 +1,40 @@
+<ion-content class="watched-content" scrollY="true">
+  <div class="page-container">
+    <h1>Watched</h1>
+
+    <p class="count-label">
+      In Watched: {{ watchedMovies.length }}
+    </p>
+<div class="movie-grid">
+  <div class="movie-card" *ngFor="let movie of watchedMovies">
+
+    <ion-button fill="clear" class="remove-btn" (click)="removeMovie(movie.id)">
+      ✕
+    </ion-button>
+
+    <div class="poster-box">
+      <img *ngIf="movie.poster && movie.poster !== 'N/A'" [src]="movie.poster">
+      <div *ngIf="!movie.poster || movie.poster === 'N/A'" class="no-poster">
+        No Image
+      </div>
+    </div>
+
+    <h3>{{ movie.title }}</h3>
+    <p>{{ movie.year }}</p>
+    <p>{{ movie.genre }}</p>
+
+    <span class="times">
+      {{ movie.timesWatched }}x watched
+    </span>
+
+    <ion-button
+      expand="block"
+      class="reset-btn"
+      (click)="resetTimesWatched(movie.id)">
+      Reset Times Watched
+    </ion-button>
+
+  </div>
+</div>
+</div>
+</ion-content>

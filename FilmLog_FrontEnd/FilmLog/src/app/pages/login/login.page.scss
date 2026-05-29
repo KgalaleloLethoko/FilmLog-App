@@ -1,0 +1,80 @@
+.login-content {
+  --background:  #000000;;
+}
+
+.login-container {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  background: #f0edef;
+  border-radius: 20px;
+  padding: 28px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.login-card h1 {
+  text-align: center;
+  color: #d81b60;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #6c757d;
+  margin-bottom: 22px;
+  font-size: 0.95rem;
+}
+
+.custom-item {
+  --background: #f3f3f3;
+  --border-radius: 14px;
+  --padding-start: 12px;
+  --inner-padding-end: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 14px;
+}
+
+ion-label {
+  color: #555555 !important;
+  font-weight: 500;
+}
+
+ion-input {
+  --color: #333333;
+  --placeholder-color: #999999;
+}
+
+.login-btn {
+  --background: #ec4899;
+  --background-hover: #db2777;
+  --background-activated: #db2777;
+  --border-radius: 12px;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.signup-btn {
+  --color: #ec4899;
+  --border-color: #ec4899;
+  --border-radius: 12px;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.message {
+  text-align: center;
+  margin-top: 16px;
+  color: #555555;
+  font-size: 0.95rem;
+  min-height: 20px;
+}
